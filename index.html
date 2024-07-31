@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Final Task</title>
+</head>
+
+<body>
+    <!-- BMI -->
+    <div class="main-box">
+        <div class="box-title">
+            <h4>Body Mass Index Calculator</h4>
+        </div>
+
+        <div class="box-input">
+            <div class="inputs">
+                <div>
+                    <label for="heightInput">Height(cm)</label>
+                    <input class="height-input" type="number" id="heightInput">
+                </div>
+
+                <div>
+                    <label for="weightInput">Weight(kg)</label>
+                    <input class="weight-input" type="number" id="weightInput">
+                </div>
+            </div>
+
+            <button class="box-button">Calculate BMI</button>
+        </div>
+
+        <div class="box-result">
+            <div class="box-result-number">
+                <span>Your BMI is</span>
+                <h5 class="number">00.00</h5>
+            </div>
+
+            <div class="status-main-box">
+                <div class="box-result-status">
+                    <span>You are</span>
+                    <h5 class="status"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Music Player</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+
+        <div class="song-details">
+            <p class="song-name"></p>
+            <p class="artist"></p>
+        </div>
+
+        <div class="progress-area">
+            <div class="progress-bar">
+            </div>
+            <div class="timer">
+                <span class="current">0:00</span>
+                <span class="duration"></span>
+            </div>
+            <audio id="main-audio" src=""></audio>
+        </div>
+
+        <div class="controls">
+            <i id="repeat" class="material-icons" title="Playlist Looped">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+                <i class="material-icons">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="material-icons">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div id="time">
+        <div class="circle" style="--clr:#B60071">
+            <div class="dots day_dot"></div>
+            <svg>
+                <circle cx="50" cy="50" r="50"></circle>
+                <circle cx="50" cy="50" r="50" id="dd"></circle>
+            </svg>
+            <div id="days">00</div>
+        </div>
+
+        <div class="circle" style="--clr:#E4003A">
+            <div class="dots hr_dot"></div>
+            <svg>
+                <circle cx="50" cy="50" r="50"></circle>
+                <circle cx="50" cy="50" r="50" id="hh"></circle>
+            </svg>
+            <div id="hours">00</div>
+        </div>
+
+        <div class="circle" style="--clr:#EB5B00">
+            <div class="dots min_dot"></div>
+            <svg>
+                <circle cx="50" cy="50" r="50"></circle>
+                <circle cx="50" cy="50" r="50" id="mm"></circle>
+            </svg>
+            <div id="minutes">00</div>
+        </div>
+
+        <div class="circle" style="--clr:#FFB200">
+            <div class="dots sec_dot"></div>
+            <svg>
+                <circle cx="50" cy="50" r="50"></circle>
+                <circle cx="50" cy="50" r="50" id="ss"></circle>
+            </svg>
+            <div id="seconds">00</div>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form-container">
+        <form id="signup" class="form">
+            <h1>SignUp Form</h1>
+            <div class="form-field">
+                <input type="text" name="username" id="username" autocomplete="off">
+                <label for="username">Username</label>
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <input type="text" name="email" id="email" autocomplete="off">
+                <label for="email">Email</label>
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <input type="password" name="password" id="password" autocomplete="off">
+                <label for="password">Password</label>
+                <small></small>
+            </div>
+
+
+            <div class="form-field">
+                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
+                <label for="confirm-password">Repassword</label>
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <button class="btn">SignUp</button>
+            </div>
+        </form>
+    </div>
+    <script src="./js/bmi.js"></script>
+    <script src="./js/music-player-data.js"></script>
+    <script src="./js/music-player.js"></script>
+    <script src="./js/countdown.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
